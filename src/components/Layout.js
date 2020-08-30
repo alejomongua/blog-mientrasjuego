@@ -9,15 +9,7 @@ export class Layout extends Component {
       <div className='mb-8'>
         <Navigation />
         <div className='container m-auto font-sans'>
-          <div className='text-green'>
-            <h1 className='text-4xl font-bold'>Mientras juego</h1>
-            <div className='font-semibold italic'>
-              Videojuegos, reseñas y más
-            </div>
-          </div>
-          <div className='mt-4'>
-            {this.props.children}
-          </div>
+          {this.props.children}
         </div>
       </div>
     )

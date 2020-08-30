@@ -21,7 +21,7 @@ export class Navigation extends Component {
             >
               Canal de youtube
             </a>
-            <Link to='/acerca_de' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-100'>
+            <Link to='/acerca-de/' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-100'>
               Acerca de
             </Link>
           </div>
