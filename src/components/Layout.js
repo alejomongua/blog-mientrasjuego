@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './main.css'
 import Navigation from './Navigation'
+import Footer from './Footer'
 
 export class Layout extends Component {
   render() {
@@ -11,6 +12,7 @@ export class Layout extends Component {
         <div className='container m-auto font-sans'>
           {this.props.children}
         </div>
+        <Footer />
       </div>
     )
   }
