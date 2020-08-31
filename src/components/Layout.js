@@ -9,7 +9,7 @@ export class Layout extends Component {
     return (
       <div className='mb-8'>
         <Navigation />
-        <div className='container m-auto font-sans'>
+        <div className='container mx-auto font-sans text-gray-900 px-4'>
           {this.props.children}
         </div>
         <Footer />
