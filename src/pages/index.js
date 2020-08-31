@@ -8,8 +8,9 @@ export default function Home({ data }) {
   return <Layout>
     <Helmet>
       <meta charSet='utf-8' />
-        <title>Mientras juego</title>
-        <meta property='og:title=Mientras Juego' />
+      <title>Mientras juego</title>
+      <meta property='og:title=Mientras Juego' />
+      <meta property={`description=Videojuegos, reseñas y más`} />
     </Helmet>
     <div className='text-green'>
       <h1 className='text-4xl font-bold'>Mientras juego</h1>

@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         green: '#5dc21e',
       },
+      opacity: {
+        '95': '0.95',
+      },
     },
   },
   variants: {},

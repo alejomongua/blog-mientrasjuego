@@ -1,10 +1,17 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 import logoGrande from '../../static/logoGrande.png'
 
 export default function Home({ data }) {
   return <Layout>
+    <Helmet>
+      <meta charSet='utf-8' />
+      <title>Mientras juego</title>
+      <meta property='og:title=Mientras Juego' />
+      <meta property={`description=Videojuegos, reseñas y más`} />
+    </Helmet>
     <div className='text-green'>
       <h1 className='text-4xl font-bold'>Mientras juego</h1>
       <div className='font-semibold italic'>
@@ -61,6 +68,7 @@ export default function Home({ data }) {
           </li>
         </ul>
       </div>
+      <div className='clear-both' />
     </div>
 </Layout>
 }

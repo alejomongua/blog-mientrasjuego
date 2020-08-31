@@ -11,6 +11,7 @@ export default function BlogPost({ data }) {
         <meta charSet='utf-8' />
         <title>{`Mientras juego | ${post.frontmatter.title}`}</title>
         <meta property={`og:title=${post.frontmatter.title}`} />
+        <meta property={`description=${post.frontmatter.excerpt}`} />
       </Helmet>
       <Layout>
         <h1 className='text-green text-bold text-4xl'>{post.frontmatter.title}</h1>
@@ -28,6 +29,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        excerpt
       }
     }
   }
