@@ -2,6 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { Helmet } from 'react-helmet'
+import moment from 'moment'
+
+import { DEFAULT_TIME_FORMAT } from '../utils/constants'
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
@@ -15,6 +18,7 @@ export default function BlogPost({ data }) {
       </Helmet>
       <Layout>
         <h1 className='text-green text-bold text-4xl'>{post.frontmatter.title}</h1>
+        <p className='text-sm italic'>Escrito en {moment(post.frontmatter.date).format(DEFAULT_TIME_FORMAT)}</p>
         <div className='mt-4 markdown'>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
@@ -30,6 +34,7 @@ export const query = graphql`
       frontmatter {
         title
         excerpt
+        date
       }
     }
   }

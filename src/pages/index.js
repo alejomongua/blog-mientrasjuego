@@ -1,8 +1,13 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import moment from 'moment'
+import 'moment/locale/es'
 
 import Layout from '../components/Layout'
+import { DEFAULT_TIME_FORMAT } from '../utils/constants'
+
+moment.locale('es')
 
 export default function Home({ data }) {
   return <Layout>
@@ -24,6 +29,7 @@ export default function Home({ data }) {
           <div key={node.id}>
             <h2 className='text-green text-semibold italic text-lg'>{node.frontmatter.title}</h2>
             <p>{node.frontmatter.excerpt}</p>
+            <p className='text-sm'>Escrito en {moment(node.frontmatter.date).format(DEFAULT_TIME_FORMAT)}</p>
             <Link to={node.fields.slug  } className='italic text-gray-800'>
               Leer más...
             </Link>
@@ -46,7 +52,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY"),
+            date,
             excerpt
           }
         }
