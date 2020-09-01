@@ -6,6 +6,8 @@ import moment from 'moment'
 
 import { DEFAULT_TIME_FORMAT } from '../utils/constants'
 
+const DOMAIN = 'https://mientrasjuego.netlify.app'
+
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
@@ -13,8 +15,10 @@ export default function BlogPost({ data }) {
       <Helmet>
         <meta charSet='utf-8' />
         <title>{`Mientras juego | ${post.frontmatter.title}`}</title>
-        <meta property={`og:title=${post.frontmatter.title}`} />
         <meta property={`description=${post.frontmatter.excerpt}`} />
+        <meta property='og:title' content={post.frontmatter.title} />
+        <meta property='og:image' content={`${DOMAIN}${post.frontmatter.featuredImage.childImageSharp.fluid.srcWebp}`} />
+        <meta property='og:description' content={post.frontmatter.excerpt} />
       </Helmet>
       <Layout>
         <h1 className='text-green text-bold text-4xl'>{post.frontmatter.title}</h1>
@@ -35,6 +39,18 @@ export const query = graphql`
         title
         excerpt
         date
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              base64
+              tracedSVG
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
+            } 
+          }
+        }
       }
     }
   }
