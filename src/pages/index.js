@@ -23,10 +23,10 @@ export default function Home({ data }) {
         Videojuegos, reseñas y más
       </div>
     </div>
-    <div className='mt-4'>
+    <div className='mt-4 mb-4'>
       <h1 className='italic font-lg'>Entradas recientes</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
+          <div className='mt-4' key={node.id}>
             <h2 className='text-green text-semibold italic text-lg'>{node.frontmatter.title}</h2>
             <p>{node.frontmatter.excerpt}</p>
             <p className='text-sm'>Escrito en {moment(node.frontmatter.date).format(DEFAULT_TIME_FORMAT)}</p>
@@ -41,7 +41,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
       totalCount
       edges {
         node {
