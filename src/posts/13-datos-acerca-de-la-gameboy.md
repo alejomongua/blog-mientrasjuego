@@ -34,7 +34,7 @@ Esta vez te contaré 13 datos acerca de la Gameboy, la primera consola portátil
 * Su videojuego más vendido fue Tetris 
 * Es una consola en 8 bits
 * Fue descontunuada en 2003
-* Cuenta con rediseños:
+* Cuenta con 2 rediseños:
     * Gameboy pocket
     * Gameboy light
 * La Gameboy light no salió de Japón
