@@ -2,10 +2,10 @@
 title: 'Reseña: Worms W. M. D.'
 date: '2021-01-19'
 excerpt: 'Worms W. M. D. es un juego de la saga Worms,  este fue lanzado el 23 de Agosto de 2016 por la compañía de videojuegos Team 17.'
-featuredImage: './Worms_W.M.D_logo.jpg'
+featuredImage: './Worms_W.M.D_logo.png'
 ---
 
-![Reseña: Worms W.M.D](./Worms_W.M.D_logo.jpg)
+![Reseña: Worms W.M.D](./Worms_W.M.D_logo.png)
 
 Worms W. M. D. es un juego de la saga Worms,  este fue lanzado el 23 de Agosto de 2016  por la compañía de videojuegos Team 17.  Trata de unos gusanos que se matan con montones de armas por ejemplo: bazucas, granadas, escopetas, bates, puños de fuego y muchas armas más.
 
