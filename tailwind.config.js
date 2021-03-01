@@ -4,6 +4,7 @@ module.exports = {
   },
   purge: [
     './src/**/*.js',
+    './gatsby-config.js',
   ],
   theme: {
     extend: {

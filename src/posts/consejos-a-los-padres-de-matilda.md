@@ -1,6 +1,6 @@
 ---
 title: 'Consejos a los padres de Matilda'
-date: '2021-03-02'
+date: '2021-03-01'
 excerpt: 'He estado leyendo el libro: Matilda de Roald Dahl en mi club de lectura, se los recomiendo mucho, pueden conocer el sitio de la profesora'
 featuredImage: 'matilda.jpg'
 ---
