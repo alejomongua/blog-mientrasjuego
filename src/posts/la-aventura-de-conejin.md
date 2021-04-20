@@ -2,10 +2,10 @@
 title: 'La aventura de Conejin'
 date: '2021-04-20'
 excerpt: 'Te invito a leer este cuento'
-featuredImage: './La-aventura-de-Conejín.gif'
+featuredImage: './La-aventura-de-Conejín.png'
 ---
 
-![La aventura de Conejin](./La-aventura-de-Conejín.gif)
+![La aventura de Conejin](./La-aventura-de-Conejín.png)
 
 Te invito a leer este cuento sobre Conejin, está muy chevere.
 
@@ -21,3 +21,5 @@ Así fue, Conejín con el permiso  de sus nuevos amigos vivió en la luna, se in
 Al cabo de unos años, Conejín extrañó su hogar en la tierra, así que pidió a los Selenitas que le construyeran un cohete para regresar a su antiguo hogar. Unas semanas después, su transporte estaba listo, por lo tanto volvió a la tierra, al aterrizar estaba en el parque donde todo comenzó, se dirigió a su casa, y vivió feliz con su familia, algunas veces cuando extraña a su amigos Selenitas mira la luna y recuerda cuando vivió allá.
 
 Fin 
+
+La imagen del conejo es de [freepik.es](https://www.freepik.es/vectores/diseno)
