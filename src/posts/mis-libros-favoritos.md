@@ -3,7 +3,7 @@ title: 'Mis libros favoritos'
 date: '2021-05-04'
 excerpt: 'Hola, el día de hoy te voy a presentar una lista de mis libros favoritos. Hay de todo, libros para niños, novelas, clásicos de la literatura y libros que han sido bestseller.'
 featuredImage: 'mis-libros-favoritos.png'
-
+---
 
 Hola, el día de hoy te voy a presentar una lista de mis libros favoritos. Hay de todo, libros para niños, novelas, clásicos de la literatura y libros que han sido bestseller. Algunos de ellos los he leído solito y otros los he leído acompañado con mis papitos. Espero que te guste mi selección de libros  
 
